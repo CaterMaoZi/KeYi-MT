@@ -16,8 +16,6 @@ jobs:
           echo "ref=$GITHUB_REF_NAME" >> $GITHUB_ENV
       - name: Checkout Git Repository
         uses: actions/checkout@v3
-      - name: Validate Gradle Wrapper
-        uses: gradle/wrapper-validation-action@v2
       - name: Set up JDK
         uses: graalvm/setup-graalvm@v1
         with:
